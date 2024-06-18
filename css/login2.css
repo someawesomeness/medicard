@@ -1,0 +1,718 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body#loginBody {
+  background: url(medbackground.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: arial;
+}
+body {
+  font-family: Arial;
+}
+
+.loginHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.loginHeader h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: snow;
+  padding: 0px;
+  margin: 0px;
+}
+.loginHeader p {
+  color: antiquewhite;
+  font-size: 40px;
+  border-bottom: 10px solid aliceblue;
+  margin: 0px auto;
+  content: "";
+  text-transform: uppercase;
+  display: inline-block;
+}
+/* .loginHeader p::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: snow;
+    width: 50%;
+    margin: 0 auto;
+} */
+.loginBody form {
+  margin: 0 auto;
+  width: 450px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  border: 2px solid aliceblue;
+  border-radius: 8px;
+}
+.loginInput {
+  margin-top: 20px;
+}
+.loginInput label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: snow;
+}
+.loginInput input {
+  height: 30px;
+  width: 100%;
+  border: 2px solid aquamarine;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.loginButtonCont {
+  margin-top: 40px;
+  text-align: center;
+}
+.loginButtonCont button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background: aqua;
+  color: snow;
+}
+.header {
+  width: 100%;
+  padding: 20px 0px;
+  background: aqua;
+  text-align: right;
+}
+.header a {
+  font-size: 20px;
+  color: snow;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border-bottom: 2px solid snow;
+}
+.header a:hover {
+  border-radius: 5px;
+  border: 2px solid snow;
+}
+.banner {
+  background: url(hospi3.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 80vb;
+}
+.homepageCont {
+  width: 100%;
+  max-width: 900px;
+  /* height: 70vh; */
+  margin: 0 auto;
+}
+.bannerHeader h1 {
+  font-size: 100px;
+  color: aqua;
+  line-height: 100%;
+}
+.bannerHeader p {
+  font-size: 30px;
+  color: aqua;
+  text-transform: uppercase;
+  /* margin-top: -10px; */
+  line-height: 100%;
+}
+.bannerTagline {
+  margin-top: 20px;
+  font-size: 25px;
+  color: snow;
+}
+.bannerIcons {
+  margin-top: 50px;
+}
+.bannerIcons a {
+  font-size: 30px;
+  margin-top: 40px;
+  padding: 7px 15px;
+  background: gray;
+  color: aqua;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.bannerIcons a:first-child {
+  margin-left: 0px;
+}
+.bannerIcons a:hover {
+  color: snow;
+  font-size: 25px;
+  background: aqua;
+  color: aliceblue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.bannerIcons a:first-child {
+  margin-left: 0px;
+}
+.bannerIcons a:hover {
+  color: snow;
+  font-size: 25px;
+  background: aqua;
+  transition: 0.5 all;
+}
+.homepageFeatures {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+}
+.homepageFeature {
+  padding: 10px 20px;
+  text-align: center;
+  width: 30%;
+}
+.homepageFeature:hover {
+  border-top: 2px solid aqua;
+  border-bottom: 2px solid aqua;
+  transition: 0.5s all;
+}
+.homepageFeature .featureIcon {
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  font-size: 50px;
+  background: aqua;
+  color: snow;
+  /* padding-left: 12px; */
+  padding-top: 3px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.homepageFeature .featureTitle {
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.homepageFeature .featureDescription {
+  color: gray;
+  font-size: 18px;
+}
+.homepageNotif {
+  background: gray;
+  padding: 80px 0px;
+}
+.homepageNotifCont {
+  display: flex;
+  flex-direction: row;
+}
+.homepageNotifCont > div {
+  width: 50%;
+}
+.emailForm h3 {
+  font-size: 25px;
+}
+.emailForm {
+  width: 40%;
+}
+.video {
+  width: 60%;
+  text-align: center;
+}
+.homepageNotif h3 {
+  margin-bottom: 20px;
+}
+.homepageNotif p {
+  color: aliceblue;
+  line-height: 200%;
+  margin-bottom: 30px;
+}
+.formCont {
+  width: 80%;
+  position: relative;
+}
+.formCont input:focus {
+  outline: none;
+}
+.formCont input {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 15px;
+  border: none;
+}
+.formCont button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  font-size: 20px;
+  padding: 0px 10px;
+  background: aqua;
+  border: none;
+  color: snow;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.video {
+  width: 100%;
+}
+iframe {
+  width: 80%;
+  height: 100%;
+}
+.socials {
+  text-align: center;
+  padding: 70px 0px 40px 0px;
+}
+h3.socialHeader {
+  font-size: 30px;
+}
+.socialText {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: gray;
+}
+.socialIconsCont a {
+  font-size: 23px;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding-top: 5px;
+  background: gray;
+  border-radius: 50%;
+  color: snow;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.socialIconsCont a:hover {
+  background: aqua;
+  transition: 0.3s all;
+}
+.footer {
+  background: gray;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.footer a {
+  color: aliceblue;
+  margin-left: 30px;
+  text-decoration: none;
+}
+.footer a:hover {
+  font-weight: bold;
+  color: aqua;
+  transition: 0.5s all;
+}
+
+/* DASHBOARD */
+#dashboardMainCont {
+  display: flex;
+  flex-direction: row;
+}
+.dashboard_sidebar {
+  width: 20%;
+  background: gray;
+  height: 100vh;
+}
+.dashboard_content_container {
+  width: 80%;
+}
+h3.dashboard_logo {
+  color: aqua;
+  font-size: 30px;
+  text-align: center;
+}
+.dashboard_sidebar_user {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  border-bottom: 1px solid snow;
+}
+.dashboard_sidebar_user img {
+  width: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid aqua;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.dashboard_sidebar_user span {
+  top: 20%;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: snow;
+  display: inline-block;
+}
+.dashboard_menu_lists {
+  margin-top: 20px;
+}
+.dashboard_menu_lists li.listMainMenu {
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+.dashboard_menu_lists li.listMainMenu a {
+  text-decoration: none;
+  color: snow;
+  display: block;
+  font-size: 14px;
+  padding: 15px 15px;
+  padding-bottom: 15px;
+  padding-right: 0px;
+}
+.dashboard_menu_lists li.listMainMenu a i {
+  font-size: 23px;
+  width: 30px;
+}
+.dashboard_menu_lists li.menuActive {
+  background: aqua;
+  color: snow;
+}
+.dashboard_menu_lists li:hover {
+  background: aqua;
+  color: snow;
+  transition: 0.3s all;
+}
+.dashboard_topNav {
+  background: snow;
+  padding: 20px;
+}
+.dashboard_topNav a {
+  color: gray;
+  font-size: 20px;
+  text-decoration: none;
+}
+a#logoutBtn {
+  float: right;
+}
+.dashboard_content {
+  padding: 50px 10px 10px 10px;
+}
+.dashboard_content_main {
+  background: snow;
+  min-height: 300px;
+  height: 100%;
+  border: 1px solid green;
+  padding-left: 20px;
+}
+#errorMessage {
+  background: snow;
+  text-align: center;
+  color: red;
+  font-size: 20px;
+  padding: 11px;
+}
+form::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+form.appForm {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background: aliceblue;
+}
+form label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+form input.appFormInput {
+  width: 100%;
+  height: 33px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+}
+.appFormInputCont {
+  margin-bottom: 15px;
+}
+#userAddFormCont {
+  padding-top: 20px;
+}
+button.appBtn {
+  background: aqua;
+  border: 1px solid navy;
+  color: snow;
+  padding: 10px;
+  margin-top: 20px;
+  float: right;
+}
+.responseMessage {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 33px;
+  background: rgba(0, 128, 0, 0.1);
+  padding: 20px;
+}
+.responseMessage_error {
+  background: rgba(128, 0, 0, 0.1);
+}
+.responseMessage_success {
+  background: rgba(0, 128, 0, 0.1);
+}
+/* User Add Page */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  width: 100%;
+  padding: 0px 10px;
+}
+.column-5 {
+  width: 40.67%;
+}
+.column-7 {
+  width: 58.33%;
+}
+.sectionHeader {
+  font-size: 21px;
+  color: aqua;
+  border-bottom: 1px solid green;
+  padding-bottom: 11px;
+  padding: 10px;
+  border-left: 4px solid green;
+  margin-bottom: 15px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+}
+table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  background: aliceblue;
+}
+table td {
+  font-size: 13px;
+  text-align: center;
+  padding: 5px;
+}
+.admins p.adminCount {
+  text-align: right;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: aqua;
+}
+.subMenuLink {
+  padding-left: 25px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+  text-transform: none;
+  font-size: 15px !important;
+}
+.subMenuLink i {
+  font-size: 16px !important;
+  width: 16px;
+}
+.subMenus {
+  background: aqua;
+  display: none;
+}
+.mainMenuIconArrow {
+  float: right;
+  font-size: 19px;
+  margin-top: 7px;
+}
+.productTextAreaInput {
+  width: 100%;
+  height: 75px;
+  border-radius: 5px;
+  border-color: goldenrod;
+}
+.productImages {
+  width: 100px;
+  height: 100px;
+}
+#suppliersSelect,
+#product {
+  display: block;
+  width: 100%;
+  height: 100px;
+  border-color: aquamarine;
+}
+.orderProductBtn {
+  background: aqua;
+  color: snow;
+}
+.orderBtn {
+  height: 33px;
+  border: none;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.submitOrderProductBtn {
+  background: aqua;
+  color: snow;
+  font-weight: bold;
+}
+.marginTop20 {
+  margin-top: 20px;
+}
+.alignRight {
+  text-align: right;
+}
+#orderProductLists {
+  margin-top: 20px;
+}
+.productNameSelect {
+  font-size: 15px;
+  border: none;
+  background: aqua;
+  padding: 3px 17px;
+  border: 1px solid aqua;
+  border-radius: 2px;
+}
+.orderProductRow {
+  padding: 6px;
+  border-bottom: 2px solide aquamarine;
+  padding-bottom: 25px;
+}
+#orderProductLists .row {
+  margin: 0px !important;
+}
+.supplierRows .supplierName {
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: aqua;
+  text-transform: uppercase;
+}
+.supplierRows .row {
+  padding: 8px 0px;
+}
+.widgetContainer {
+  text-align: center;
+  padding: 31px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  background: snow;
+}
+.widgetHeader {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.widgetValue {
+  margin: 0px !important;
+  font-size: 35px;
+}
+.widgetSale {
+  background: aqua;
+}
+.widgetQty {
+  background: pink;
+}
+.widgetOrder {
+  background: green;
+}
+.widgetOrder .widgetHeader,
+.widgetOrder .widgetValue {
+  color: snow;
+}
+.widgetMainRow {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid snow;
+}
+#container {
+  height: 300px;
+}
+.widgetSecondRow {
+  padding: 5px;
+  border: 1px solid aqua;
+}
+.widgetSecondRow .header {
+  font-size: 20px;
+  background: aquamarine;
+  padding-left: 10px;
+}

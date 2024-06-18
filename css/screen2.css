@@ -1,0 +1,292 @@
+.searchInputContainer {
+  margin-top: 15px;
+}
+.searchInputContainer input {
+  width: 100%;
+  height: 24px;
+  font-size: 19px;
+  padding-left: 26px;
+  border: 1px solid aqua;
+  border-radius: 4px;
+}
+.productsContainer {
+  margin-top: 20px;
+  /* padding: 10px; */
+}
+.productResultContainer {
+  padding: 2px;
+  border: 1px solid aqua;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.productResultContainer img {
+  width: 100%;
+  transform: 0.1s;
+}
+
+.productInfoContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  left: 0;
+  background: aqua;
+  height: 71px;
+  font-weight: bold;
+  padding: 9px;
+}
+.productResultContainer img:hover {
+  transform: scale(1.1);
+}
+.searchResultContainer .col-4 {
+  padding: 0px !important;
+}
+.productResultCont:hover {
+  cursor: pointer;
+}
+.screenOrderContainer {
+  padding: 0px !important;
+  border-left: 2px solid aquamarine;
+}
+.screenHeader {
+  background: aqua;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/** Logo **/
+
+.screenHeader .logo {
+  font-size: 57px;
+  font-weight: bold;
+  color: snow;
+  text-shadow: 0 0 10px #48cae4, 0 0 20px #48cae4, 0 0 10px #48cae4;
+  margin: 0px !important;
+}
+
+/** TIME AND DATE**/
+.screenHeader .timeAndDate {
+  font-size: 15px;
+  color: snow;
+  text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8, 0 0 30px #00b4d8,
+    0 0 10px #00b4d8;
+}
+.alignRight {
+  text-align: right !important;
+}
+.setting a {
+  font-size: 38px;
+  margin-right: 13px;
+  color: snow !important;
+}
+
+/** Screen Items **/
+#screenItems_tb1 thead th {
+  color: black;
+  text-shadow: 0 0 50px #000000, 0 0 70px #000000, 0 0 100px #000000;
+}
+#screenItems_tb1 th {
+  color: aqua;
+  font-size: 14px;
+}
+#screenItems_tb1 td {
+  font-size: 18px;
+}
+#screenItems_tb1 tbody tr:nth-child(odd) {
+  background: aqua;
+}
+.editordelBtn {
+  color: aqua;
+}
+p.itemTotal {
+  font-size: 28px;
+  padding-left: 10px;
+  padding-right: 14px;
+}
+span.itemTotal-value {
+  float: right;
+  font-weight: bold;
+  color: black;
+  font-size: 34px;
+}
+span.itemTotal-label {
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.proceedBtnContainer {
+  margin-top: 200px;
+  padding: 20px;
+}
+.proceedBtn {
+  font-size: 45px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  border: 2px solid aqua;
+  border-radius: 5px;
+  color: aqua;
+}
+.proceedBtn:hover {
+  background: aqua;
+  color: snow;
+  transition: 0.2s;
+}
+.itemTotalContainer {
+  margin-top: 20px;
+}
+.dialogProductName {
+  color: aqua; /* Change the color as per your requirement */
+  font-size: 25px; /* Change the font size as per your requirement */
+  /* Add more styles as needed */
+}
+.floatRight {
+  float: right;
+}
+.itemNoData {
+  font-size: 25px;
+  color: aqua;
+  text-align: center;
+  padding: 51px;
+  text-transform: uppercase;
+}
+.quantityUpdateBtn {
+  text-decoration: none;
+  font-size: 15px;
+}
+.quantityUpdateBtn_minus {
+  color: red;
+}
+.quantityUpdateBtn_plus {
+  color: green;
+}
+.proceedDialog .modal-dialog {
+  max-width: 919px !important;
+  width: 100%;
+}
+.proceedTotalAmountContainer {
+  text-align: center;
+}
+.proceed_amt {
+  font-size: 40px;
+  font-weight: bold;
+  color: goldenrod;
+}
+.proceed_amt_title {
+  display: block;
+  font-size: 17px;
+  color: #7e7e7e;
+}
+.proceedTblHeader {
+  font-size: 15px;
+  color: #7e7e7e;
+  text-align: center;
+}
+.proceedTblContent {
+  font-size: 16px;
+  color: green;
+  text-align: center;
+}
+.proceedTblContentContainter {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.proceedTblContentContainter:nth-child(odd) {
+  background: aqua;
+}
+.proceedTblHeaderContainer {
+  margin-bottom: 10px;
+}
+.proceedTblHeaderContainer_title {
+  font-size: 26px;
+  color: turquoise;
+}
+#userAmt {
+  height: 50px;
+  font-size: 21px;
+}
+.proceedUserChange {
+  margin-top: 8px;
+  text-align: right !important;
+}
+.proceedUserChange small {
+  font-size: 23px;
+  color: #7e7e7e;
+}
+/* receipt*/
+
+.receiptContainer {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+
+  border: 1px solid #000000;
+}
+
+#searchResultContainerMain {
+  padding: 0px 27px;
+  background: snow;
+  border: 2px solid aqua;
+  border-top: none;
+}
+.searchResultImg {
+  width: 65%;
+}
+.searchResultProductName {
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.searchResultProductPrice {
+  font-size: 25px;
+  padding-left: 12px;
+}
+.searchResultEntry {
+  border-bottom: 1px solid green;
+  padding: 10px 0px;
+}
+.searchResultEntry:nth-child(even) {
+  background: aqua;
+}
+.nodatafound {
+  font-size: 24px;
+  display: block;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.widgetContainer {
+  text-align: center;
+  padding: 31px;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  background: snow;
+}
+.widgetHeader {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.widgetValue {
+  margin: 0px !important;
+  font-size: 35px;
+}
+.widgetSale {
+  background: aqua;
+}
+.widgetQty {
+  background: pink;
+}
+.widgetOrder {
+  background: green;
+}
+.widgetHeader .widgetValue .widgetSale .widgetQty .widgetOrder {
+  color: snow;
+}
